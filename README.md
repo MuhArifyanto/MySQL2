@@ -37,13 +37,15 @@ create table Mahasiswa (
     );
 ```
 
-![alt text](oke1.png)
+![oke1](https://github.com/MuhArifyanto/MySQL2/assets/147913440/050cdd40-93b7-45fa-8ead-53d6d44195a2)
+
 
 **Tampilkan hasil table :**
 
 `desc Mahasiswa;`
 
-![alt text](oke2.png)
+![oke2](https://github.com/MuhArifyanto/MySQL2/assets/147913440/67dc1154-8e3b-4a86-901d-9d3deff7bf78)
+
 
 **2. Buat script untuk table Dosen :**
 ```
@@ -53,13 +55,15 @@ create table Dosen (
     );
 ```
 
-![alt text](oke3.png)
+![oke3](https://github.com/MuhArifyanto/MySQL2/assets/147913440/7db9c7ce-1979-44ea-8951-632e18747997)
+
 
 **Tampilkan tabel :**
 
 `desc Dosen;`
 
-![alt text](oke4.png)
+![oke4](https://github.com/MuhArifyanto/MySQL2/assets/147913440/7c9dc715-7199-4f9e-9847-8cdde31683ed)
+
 
 **3. Buat script untuk Mata kuliah :**
 ```
@@ -70,14 +74,16 @@ create table Matakuliah (
     );
 ```
 
-![alt text](oke5.png)
+![oke5](https://github.com/MuhArifyanto/MySQL2/assets/147913440/098b92ec-2c92-4d51-8773-2197b8e695a4)
+
 
 
 **Tampilkan table :**
 
 `desc Matakuliah;`
 
-![alt text](oke6.png)
+![oke6](https://github.com/MuhArifyanto/MySQL2/assets/147913440/6698c7d6-f99a-49c6-9e2f-42fb601f99a5)
+
 
 **4. Buat script untuk jadwal mengajar :**
 ```
@@ -93,13 +99,15 @@ create table JadwalMengajar (
     ); 
 ```
 
-![alt text](oke7.png)
+![oke7](https://github.com/MuhArifyanto/MySQL2/assets/147913440/b7e7239b-9241-4f58-b3d8-a2e71aa43683)
+
 
 **Tampilkan table :**
 
 `desc JadwalMengajar;`
 
-![alt text](oke8.png)
+![oke8](https://github.com/MuhArifyanto/MySQL2/assets/147913440/9e0ec140-5575-47d3-8953-2b7c54172a3f)
+
 
 **5. Buat script untuk KRSMahasiswa :**
 ```
@@ -116,13 +124,15 @@ CREATE TABLE KRSMahasiswa (
     );
 ```
 
-![alt text](oke9.png)
+![oke9](https://github.com/MuhArifyanto/MySQL2/assets/147913440/4243d3eb-d05a-4e1b-a6aa-b6c8a579bd77)
+
 
 **Tampilkan table :**
 
 `desc KRSMahasiswa;`
 
-![alt text](oke10.png)
+![oke10](https://github.com/MuhArifyanto/MySQL2/assets/147913440/cb3e59ec-0012-4bd2-a23a-9e3a314e6a7f)
+
 
 # Soal Latihan Praktikum
 
@@ -157,43 +167,49 @@ insert into mahasiswa (nim, nama, jenis_kelamin, tgl_lahir, jalan, kota, kodepos
 -> (11223349,"anton sinaga","laki-laki","1988-03-10","","Cikarang","","","");
 ```
 
-![alt text](oke11.png)
+![oke11](https://github.com/MuhArifyanto/MySQL2/assets/147913440/1feab3b0-cebf-4b71-bcde-d8004bfc7812)
+
+
 
 **2. Menampilkan semua isi/record pada tabel bisa menggunakan kode berikut :**
 
 `select*from mahasiswa;`
 
-![alt text](oke12.png)
+![oke12](https://github.com/MuhArifyanto/MySQL2/assets/147913440/36d6e67d-6510-4526-b165-72f37bfc1758)
 
 **3. Mengubah data tanggal lahir mahasiswa yang bernama Ari menjadi : 1979-08-31 menggunakan kode berikut :**
 
 `update mahasiswa set tgl_lahir='1979-08-31' where nim=11223344;`
 
-![alt text](oke13.png)
+![oke13](https://github.com/MuhArifyanto/MySQL2/assets/147913440/3d111223-42b7-4623-877f-4001f8856af8)
+
 
 **4. Menampilkan satu baris / record data yang telah diubah tadi yaitu record dengan nama Ari saja dengan cara sebagai berikut :**
 
 `select*from mahasiswa where nim=11223344;`
 
-![alt text](oke14.png)
+![oke14](https://github.com/MuhArifyanto/MySQL2/assets/147913440/26d81f8a-98d0-47a9-9332-3e4cb35d01af)
+
 
 **5. Menghapus Mahasiswa yang bernama Dina dengan cara sebagai berikut:**
 
 `delete from mahasiswa where nim=11223346;`
 
-![alt text](oke15.png)
+![oke15](https://github.com/MuhArifyanto/MySQL2/assets/147913440/431db044-d414-4e10-b1cd-3d96ce92d7aa)
+
 
 **6. Menampilkan record atau data yang tanggal kelahirannya lebih dari atau sama dengan 1996-1-2 dengan cara sebagai berikut :**
 
 `select*from mahasiswa where tgl_lahir<='1996-1-2';`
 
-![alt text](oke16.png)
+![oke16](https://github.com/MuhArifyanto/MySQL2/assets/147913440/997e5ed5-8fed-49b2-9127-4166bdb64208)
 
 **7. Menampilkan semua Mahasiswa yang berasal dari Bekasi dan berjenis kelamin perempuan dengan cara sebagai berikut :**
 
 `select*from Mahasiswa where kota='bekasi' and jenis_kelamin='Perempuan';`
 
-![alt text](oke17.png)
+![oke17](https://github.com/MuhArifyanto/MySQL2/assets/147913440/68bc106e-cccf-424e-af8a-34aa40c1ce97)
+
 
 **8. Menampilkan semua Mahasiswa yang berasal dari Bekasi dengan kelamin laki-laki atau Mahasiswa yang berumur lebih dari 22 tahun dengan kelamin wanita dengan cara sebagai berikut :**
 ```
@@ -202,19 +218,22 @@ or tgl_lahir<='2002-4-22'
 and jenis_kelamin='Perempuan';
 ```
 
-![alt text](oke18.png)
+![oke18](https://github.com/MuhArifyanto/MySQL2/assets/147913440/cc6511ff-7690-4824-ac34-74df5620c3c7)
+
 
 **9. Menampilkan data nama dan jalan mahasiswa saja dari tabel tersebut dengan cara sebagai berikut :**
 
 `select nama, jalan from mahasiswa;`
 
-![alt text](oke19.png)
+![oke19](https://github.com/MuhArifyanto/MySQL2/assets/147913440/03f1ba7c-2383-4856-b493-deea748d34f4)
+
 
 **10. Menampilkan data mahasiswa terurut berdasarkan nama dengan cara sebagai berikut :**
 
 `select*from mahasiswa -> order by nama asc;`
 
-![alt text](oke20.png)
+![oke20](https://github.com/MuhArifyanto/MySQL2/assets/147913440/22c21f2a-a005-4057-9aee-c343bc3b9df5)
+
 
 # Evaluasi dan Pertanyaan 
 ***Tulis semua perintah-perintah SQL percobaan di atas beserta outputnyan!***
@@ -237,7 +256,8 @@ and jenis_kelamin='Perempuan';
 
 `INSERT INTO biodata (nim, nama, alamat) VALUE ('1234','Agus','Cikarang');`
 
-![alt text](agus1.png)
+![agus1](https://github.com/MuhArifyanto/MySQL2/assets/147913440/e878fad2-f75f-46b8-9834-43be86e9f631)
+
 
 **2. Menampilkan data :**
 
@@ -247,7 +267,7 @@ and jenis_kelamin='Perempuan';
 
 `SELECT*FROM biodata;`
 
-![alt text](agus2.png)
+![agus2](https://github.com/MuhArifyanto/MySQL2/assets/147913440/7f26a329-de05-4b12-bcfc-2fb1d3289813)
 
 **3. Mengubah data :**
 
@@ -257,7 +277,8 @@ and jenis_kelamin='Perempuan';
 
 `UPDATE biodata SET nama='Arif', alamat='Klaten' WHERE nim='1234';`
 
-![alt text](agus6.png)
+![agus6](https://github.com/MuhArifyanto/MySQL2/assets/147913440/e204887f-e6f6-4d0e-9026-ef95c9630ecb)
+
 
 **4. Menghapus data :**
 
@@ -267,7 +288,7 @@ and jenis_kelamin='Perempuan';
 
 `DELETE FROM biodata WHERE nim=‘12334’`
 
-![alt text](agus5.png)
+![agus5](https://github.com/MuhArifyanto/MySQL2/assets/147913440/37d04cb6-995a-4b42-a5f3-1e4b533451aa)
 
 ***Apa bedanya penggunaan BETWEEN dan penggunaan operator >= dan <= ?***
 
